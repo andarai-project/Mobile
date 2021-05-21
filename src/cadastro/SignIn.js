@@ -1,5 +1,6 @@
-import React from "react";
-import { StyleSheet, View, ScrollView, Text } from "react-native";
+import React, { useEffect } from "react";
+import firebase from "../../FireBaseConfig";
+import { Alert, Text } from "react-native";
 import { Button } from "native-base";
 
 import {
@@ -17,6 +18,37 @@ import Logo from "../compoents/Logo";
 
 export default function SignIn({ navigation }) {
   const logo = require("../img/logo.png");
+
+  const [email, onChangeText] = React.useState("");
+  const [pass, onChangePass] = React.useState("");
+
+  function loginFirebase() {
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(email, pass)
+      .then((userCredential) => {
+        // Signed in
+        let user = userCredential.user;
+        // ...
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+      });
+  }
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged(function (user) {
+      if (user) {
+        navigation.navigate("Index");
+      } else {
+        /*Alert.alert("Login Incorreto", "Email ou senha incorreto", [
+          { text: "OK", onPress: () => console.log("OK Pressed") },
+        ]);
+        */
+      }
+    });
+  });
 
   return (
     <Container>
@@ -39,10 +71,18 @@ export default function SignIn({ navigation }) {
             <TituloText style={{ marginLeft: 30 }}>Cadastrar</TituloText>
           </Titulo>
         </ContainerRow>
-        <Inputs placeholder="Email"></Inputs>
-        <Inputs placeholder="Senha"></Inputs>
+        <Inputs
+          placeholder="Email"
+          onChangeText={onChangeText}
+          value={email}
+        ></Inputs>
+        <Inputs
+          placeholder="Senha"
+          onChangeText={onChangePass}
+          value={pass}
+        ></Inputs>
         <TextoSenha>Esqueceu a Senha?</TextoSenha>
-        <BotaoCadastrar onPress={() => navigation.navigate("Index")}>
+        <BotaoCadastrar onPress={() => loginFirebase()}>
           <Text style={{ fontWeight: "bold" }}>Confirmar</Text>
         </BotaoCadastrar>
       </ContainerDown>

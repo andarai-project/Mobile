@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import firebase from "../../FireBaseConfig";
 import { StyleSheet, View, ScrollView, Text } from "react-native";
 import { CheckBox, Body } from "native-base";
 
@@ -20,6 +21,24 @@ import Logo from "../compoents/Logo";
 export default function SignUp({ navigation }) {
   const logo = require("../img/logo.png");
 
+  const [email, onChangeText] = React.useState("");
+  const [pass, onChangePass] = React.useState("");
+
+  function loginFirebase() {
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, pass)
+      .then((userCredential) => {
+        // Signed in
+        let user = userCredential.user;
+        // ...
+      })
+      .catch((error) => {
+        var errorCode = error.code;
+        var errorMessage = error.message;
+      });
+  }
+
   return (
     <Container>
       <ContainerUp>
@@ -36,8 +55,18 @@ export default function SignUp({ navigation }) {
             </TituloText>
           </Titulo>
         </ContainerRow>
-        <Inputs placeholder="Email"></Inputs>
-        <Inputs placeholder="Senha"></Inputs>
+        <Inputs placeholder="Nome"></Inputs>
+        <Inputs
+          placeholder="Email"
+          onChangeText={onChangeText}
+          value={email}
+        ></Inputs>
+        <Inputs
+          placeholder="Senha"
+          onChangeText={onChangePass}
+          value={pass}
+          secureTextEntry={true}
+        ></Inputs>
         <Inputs placeholder="Telefone"></Inputs>
         <ContainerCheck>
           <Text
@@ -63,7 +92,7 @@ export default function SignUp({ navigation }) {
             </Text>
           </TextoCheck>
         </ContainerCheck>
-        <BotaoCadastrar onPress={() => navigation.navigate("Index")}>
+        <BotaoCadastrar onPress={() => loginFirebase()}>
           <Text style={{ fontWeight: "bold" }}>Confirmar</Text>
         </BotaoCadastrar>
       </ContainerDown>
