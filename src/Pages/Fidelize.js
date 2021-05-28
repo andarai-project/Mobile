@@ -1,14 +1,14 @@
 import React from "react";
 import { StyleSheet, View, ScrollView, Text } from "react-native";
 
-class Perfil extends React.Component {
+class Fidelize extends React.Component {
   render() {
     return (
       <View>
-        <Text>Perfil</Text>
+        <Text></Text>
       </View>
     );
   }
 }
 
-export default Perfil;
+export default Fidelize;

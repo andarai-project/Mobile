@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {View, StyleSheet, Text, ScrollView } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import { Ionicons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native'
 
 import {
   Container,
@@ -12,18 +13,18 @@ import {
   TipicasButtom,
   DocesButtom,
   LegumesButtom,
-  CadastroInput,
+  BuscarInput,
   IconContainerUm,
 } from "../Styles/Styles";
 
-class Buscar extends React.Component {
-  render() {
+export default function Buscar () {
+  const navigation = useNavigation()
     return (
       <Container>
        <ScrollView>
-          <CadastroInput placeholder="Buscar">
-          </CadastroInput>
-          <FrutasButtom>
+          <BuscarInput placeholder="Buscar">
+          </BuscarInput>
+          <FrutasButtom onPress={ () => navigation.navigate("BuscaDois")}>
           <IconContainerUm>
           <MaterialCommunityIcons name="fruit-citrus" size={30} color="#E8B280" />
           </IconContainerUm>
@@ -57,6 +58,3 @@ class Buscar extends React.Component {
      </Container>
     );
   }
-}
-
-export default Buscar;
