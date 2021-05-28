@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import firebase from "../../FireBaseConfig";
 import { Alert, Text } from "react-native";
-import { Button } from "native-base";
 
 import {
   Container,
