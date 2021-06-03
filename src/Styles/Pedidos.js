@@ -69,3 +69,16 @@ export const BotaoFinal = styled.TouchableOpacity`
   border-radius: 20px;
   background-color: #62a87c;
 `;
+
+export const BananaPrataPedido = styled.Image.attrs({
+  source: require("../img/BananaPrata.jpg"),
+  resizeMode: "stretch",
+  position: "absolute",
+})`
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 100px;
+`;

@@ -8,6 +8,7 @@ const FotoFruta = (props) => {
       style={{
         width: 65,
         height: 65,
+        borderRadius: "100%",
       }}
     />
   );

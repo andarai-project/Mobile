@@ -5,7 +5,7 @@ class Fidelize extends React.Component {
   render() {
     return (
       <View>
-        <Text></Text>
+        <Text>oi</Text>
       </View>
     );
   }
