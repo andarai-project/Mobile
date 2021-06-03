@@ -51,7 +51,7 @@ class Basic extends Component {
         <Content style={{ backgroundColor: "#f0f0f0" }}>
           {this.renderTab(this.state.footerTab)}
         </Content>
-        <Footer style={{ height: 70 }}>
+        <Footer style={{ height: 70, color: "green" }}>
           <FooterTab>
             <Button
               style={{ height: 70 }}
