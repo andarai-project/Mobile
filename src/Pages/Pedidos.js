@@ -14,15 +14,18 @@ import {
   TituloCard,
   PrecoCard,
   TituloText,
+  BananaPrataPedido,
 } from "../Styles/Pedidos";
-const logo = require("../img/logo.png");
+const BananaVermelha = require("../img/BananaVermelha.jpg");
+const BananaPrata = require("../img/BananaPrata.jpg");
+const Pupunha = require("../img/Pupunha.jpg");
 
 export default function Pedidos() {
   const navigation = useNavigation();
   const DATA = [
     { ID: "1", Nome: "Banana Vermelha", Preco: "R$5,00" },
-    { ID: "2", Nome: "Maçã", Preco: "R$7,00" },
-    { ID: "3", Nome: "Morango", Preco: "R$9,00" },
+    { ID: "2", Nome: "Banana Prata", Preco: "R$5,00" },
+    { ID: "3", Nome: "Pupunha", Preco: "R$5,00" },
   ];
 
   const banana = require("../img/banana.jpg");
@@ -32,26 +35,42 @@ export default function Pedidos() {
         <TituloText>Pedidos</TituloText>
       </Header>
       <Main>
-        <FlatList
-          data={DATA}
-          renderItem={({ item }) => (
-            <Card>
-              <View style={{ flexDirection: "row" }}>
-                <ImgConatiner>
-                  <FotoFruta image={banana} />
-                </ImgConatiner>
-                <View style={{ flexDirection: "collumn" }}>
-                  <TituloCard>{item.Nome}</TituloCard>
-                  <PrecoCard>{item.Preco}</PrecoCard>
-                </View>
-              </View>
-            </Card>
-          )}
-          keyExtractor={(item) => item.ID}
-        ></FlatList>
+        <Card>
+          <View style={{ flexDirection: "row" }}>
+            <ImgConatiner>
+              <FotoFruta image={BananaVermelha} />
+            </ImgConatiner>
+            <View style={{ flexDirection: "collumn" }}>
+              <TituloCard>Banana Vermelha</TituloCard>
+              <PrecoCard>R$5,00</PrecoCard>
+            </View>
+          </View>
+        </Card>
+        <Card>
+          <View style={{ flexDirection: "row" }}>
+            <ImgConatiner>
+              <FotoFruta image={BananaPrata} />
+            </ImgConatiner>
+            <View style={{ flexDirection: "collumn" }}>
+              <TituloCard>Banana Prata</TituloCard>
+              <PrecoCard>R$5,00</PrecoCard>
+            </View>
+          </View>
+        </Card>
+        <Card>
+          <View style={{ flexDirection: "row" }}>
+            <ImgConatiner>
+              <FotoFruta style={{ borderRadius: 100 }} image={Pupunha} />
+            </ImgConatiner>
+            <View style={{ flexDirection: "collumn" }}>
+              <TituloCard>Pupunha</TituloCard>
+              <PrecoCard>R$5,00</PrecoCard>
+            </View>
+          </View>
+        </Card>
       </Main>
       <Footer>
-        <BotaoFinal onPress={() => navigation.navigate("Home")}>
+        <BotaoFinal onPress={() => navigation.navigate("Checkout")}>
           <Text style={{ fontWeight: "bold" }}>Finalizar Pedido</Text>
         </BotaoFinal>
       </Footer>

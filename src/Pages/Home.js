@@ -106,7 +106,7 @@ class Home extends React.Component {
               <ContainerCartao>
               <RetanguloFrutas />
               <Bolinha><FeiranteTres /></Bolinha>
-              <TextDois>Frutas Jorge</TextDois>
+              <TextDois>Frutas Seu Jorge</TextDois>
               <IconContainerDois>
               <MaterialCommunityIcons name="fruit-citrus" size={30} color="#E8B280" />
               </IconContainerDois>

@@ -13,7 +13,8 @@ import Home from "../Pages/Home";
 import Buscar from "../Pages/Buscar";
 import Mapa from "../Pages/Mapa";
 import Pedidos from "../Pages/Pedidos";
-import Perfil from "../Pages/Perfil";
+import Fidelize from "../Pages/Fidelize";
+import BuscaDois from "../Pages/BuscaDois";
 
 class Basic extends Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class Basic extends Component {
       case 4:
         return <Pedidos />;
       case 5:
-        return <Perfil />;
+        return <Fidelize />;
       default:
         return <Home />;
     }
