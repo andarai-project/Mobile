@@ -8,12 +8,11 @@ export const OpacidadeTocavel = styled.TouchableOpacity`
   padding: 5em;
 `;
 
-
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
   align-items: center;
-  background-color: #F2F2F2;    
+  background-color: #f2f2f2;
 `;
 
 export const ContainerTelaMapa = styled.View`
@@ -42,14 +41,12 @@ export const TextTres = styled.Text`
   color: black;
 `;
 
-
 export const TextPedidoUm = styled.Text`
   top: 55px;
   font-size: 22px;
   font-weight: bold;
   color: black;
 `;
-
 
 export const TextPedidoDois = styled.Text`
   top: 60px;
@@ -81,8 +78,6 @@ export const TextPedidoButtom = styled.Text`
   color: black;
 `;
 
-
-
 export const TextBusca = styled.Text`
   top: 70px;
   position: absolute;
@@ -111,7 +106,7 @@ export const TextCategoria = styled.Text`
   top: 20px;
   left: 20px;
   font-size: 10px;
-  color: #ADADAF;
+  color: #adadaf;
 `;
 
 export const SeuJorgeImg = styled.Image.attrs({
@@ -166,8 +161,6 @@ export const CarmemImg = styled.Image.attrs({
   border-radius: 130px;
 `;
 
-
-
 export const FeiranteImagem = styled.Image.attrs({
   source: require("../img/Jorge.jpg"),
   resizeMode: "stretch",
@@ -206,7 +199,6 @@ export const FeiranteDois = styled.Image.attrs({
   width: 130px;
   border-radius: 130px;
 `;
-
 
 export const FeiranteTres = styled.Image.attrs({
   source: require("../img/FeiranteTres.jpg"),
@@ -256,7 +248,7 @@ export const FrutasButtom = styled.TouchableOpacity`
   border-radius: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  background-color: #FFEDDC;
+  background-color: #ffeddc;
 `;
 
 export const TipicasButtom = styled.TouchableOpacity`
@@ -269,7 +261,7 @@ export const TipicasButtom = styled.TouchableOpacity`
   border-radius: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  background-color: #D2B1E0;
+  background-color: #d2b1e0;
 `;
 
 export const DocesButtom = styled.TouchableOpacity`
@@ -282,7 +274,7 @@ export const DocesButtom = styled.TouchableOpacity`
   border-radius: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  background-color: #FBDFEC;
+  background-color: #fbdfec;
 `;
 
 export const SalgadosButtom = styled.TouchableOpacity`
@@ -295,19 +287,19 @@ export const SalgadosButtom = styled.TouchableOpacity`
   border-radius: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  background-color: #FFCCCC;
+  background-color: #ffcccc;
 `;
 export const LegumesButtom = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
   align-self: center;
-   flex-direction: row;
+  flex-direction: row;
   width: 320px;
   height: 60px;
   border-radius: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  background-color: #B5F5CD;
+  background-color: #b5f5cd;
 `;
 
 export const ButtomPedidosUm = styled.TouchableOpacity`
@@ -320,20 +312,20 @@ export const ButtomPedidosUm = styled.TouchableOpacity`
   border-radius: 30px;
   margin-top: 530px;
   margin-bottom: 10px;
-  background-color: #62A87C;
+  background-color: #62a87c;
 `;
 
 export const ButtomPedidosDois = styled.TouchableOpacity`
   justify-content: center;
   align-items: center;
   align-self: center;
-   flex-direction: row;
+  flex-direction: row;
   width: 320px;
   height: 60px;
   border-radius: 30px;
   margin-top: 50px;
   margin-bottom: 10px;
-  background-color: #B5F5CD;
+  background-color: #b5f5cd;
 `;
 
 export const BuscarInput = styled.TextInput.attrs({
@@ -346,29 +338,27 @@ export const BuscarInput = styled.TextInput.attrs({
   align-items: center;
   align-self: center;
   margin-top: 50px;
-  paddingLeft: 20px;
+  padding-left: 20px;
   width: 280px;
   height: 50px;
   border-radius: 30px;
-  background-color: #62A87C;
-
+  background-color: #62a87c;
 `;
 
 export const IconContainerUm = styled.View`
-    left: -130px;
-
+  left: -130px;
 `;
 
 export const IconContainerDois = styled.View`
-    position: absolute;
-    align-self: center;
-    top: 220px;
+  position: absolute;
+  align-self: center;
+  top: 220px;
 `;
 
 export const IconTresContainer = styled.View`
-    position: absolute;
-    align-self: center;
-    top: 190px;
+  position: absolute;
+  align-self: center;
+  top: 190px;
 `;
 
 export const HomeContainerHorizontal = styled.View`
@@ -377,13 +367,12 @@ export const HomeContainerHorizontal = styled.View`
   justify-content: space-between;
 `;
 
-
 export const ContainerBusca = styled.View`
   margin-top: 150px;
   align-self: center;
   border-radius: 30px;
   width: 100%;
-  background-color: #ECFBF2;
+  background-color: #ecfbf2;
 `;
 
 export const SearchContainer = styled.View`
@@ -391,7 +380,7 @@ export const SearchContainer = styled.View`
   align-self: center;
   border-radius: 20px;
   width: 100%;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 `;
 
 
@@ -401,11 +390,10 @@ export const ContainerBuscaTitulo = styled.View`
   background-color: #FFEDDC;
 `;
 
-
 export const RetanguloFrutas = styled.View`
   align-self: center;
   margin-top: 81px;
-  background-color: #FFEDDC;
+  background-color: #ffeddc;
   flex-direction: row;
   height: 190px;
   width: 190px;
@@ -415,7 +403,7 @@ export const RetanguloFrutas = styled.View`
 export const RetanguloTipicas = styled.View`
   align-self: center;
   margin-top: 81px;
-  background-color: #D2B1E0;
+  background-color: #d2b1e0;
   flex-direction: row;
   height: 190px;
   width: 190px;
@@ -425,7 +413,7 @@ export const RetanguloTipicas = styled.View`
 export const RetanguloDoces = styled.View`
   align-self: center;
   margin-top: 81px;
-  background-color: #FBDFEC;
+  background-color: #fbdfec;
   flex-direction: row;
   height: 190px;
   width: 190px;
@@ -435,7 +423,7 @@ export const RetanguloDoces = styled.View`
 export const RetanguloSalgados = styled.View`
   align-self: center;
   margin-top: 81px;
-  background-color: #FFCCCC;
+  background-color: #ffcccc;
   flex-direction: row;
   height: 190px;
   width: 190px;
@@ -445,7 +433,7 @@ export const RetanguloSalgados = styled.View`
 export const RetanguloLegumes = styled.View`
   align-self: center;
   margin-top: 81px;
-  background-color: #B5F5CD;
+  background-color: #b5f5cd;
   flex-direction: row;
   height: 190px;
   width: 190px;
@@ -459,7 +447,6 @@ export const ContainerCartao = styled.TouchableOpacity`
   left: 20px;
   margin-left: 30px;
   flex-direction: row-reverse;
-
 `;
 
 export const ContainerPedidoTitulo = styled.TouchableOpacity`
@@ -524,7 +511,7 @@ export const ContainerFruta = styled.View`
   height: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #B5F5CD;    
+  background-color: #b5f5cd;
 `;
 
 export const BananaVermelhaJorge = styled.Image.attrs({
@@ -660,4 +647,8 @@ export const CounterContainer = styled.View`
   top: 430px;
   justify-content: center;
   align-items: center;
+`;
+export const MapaView = styled.View`
+  height: 750px;
+  width: 100%;
 `;

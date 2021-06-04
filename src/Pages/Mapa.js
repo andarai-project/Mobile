@@ -6,24 +6,23 @@ import {
   Container,
   TextUm,
   ContainerTelaMapa,
+  MapaView,
 } from "../Styles/Styles";
 
 class Mapa extends React.Component {
   render() {
     return (
-      <ContainerTelaMapa>
-       <MapView
-             style={{ ...StyleSheet.absoluteFillObject }}
-             initialRegion={{
-             latitude: -1.456652,
-             longitude: -48.485174,
-             latitudeDelta: 0.01,
-             longitudeDelta: 0.04,
+      <MapaView>
+        <MapView
+          style={{ ...StyleSheet.absoluteFillObject }}
+          initialRegion={{
+            latitude: -1.456652,
+            longitude: -48.485174,
+            latitudeDelta: 0.01,
+            longitudeDelta: 0.04,
           }}
-        >
-
-          </MapView>
-     </ContainerTelaMapa>
+        ></MapView>
+      </MapaView>
     );
   }
 }

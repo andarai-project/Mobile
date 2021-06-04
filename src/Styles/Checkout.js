@@ -27,3 +27,11 @@ export const CardS = styled.View`
   margin-top: 20px;
   background-color: white;
 `;
+
+export const TotalView = styled.View`
+  flex-direction: row;
+  height: 60px;
+  width: 320px;
+  padding-left: 35px;
+  padding-top: 15px;
+`;

@@ -15,6 +15,8 @@ import {
   PrecoCard,
   TituloText,
   BananaPrataPedido,
+  BananaVermelhaPedido,
+  PupunhaPedido,
 } from "../Styles/Pedidos";
 const BananaVermelha = require("../img/BananaVermelha.jpg");
 const BananaPrata = require("../img/BananaPrata.jpg");
@@ -38,7 +40,7 @@ export default function Pedidos() {
         <Card>
           <View style={{ flexDirection: "row" }}>
             <ImgConatiner>
-              <FotoFruta image={BananaVermelha} />
+              <BananaVermelhaPedido />
             </ImgConatiner>
             <View style={{ flexDirection: "collumn" }}>
               <TituloCard>Banana Vermelha</TituloCard>
@@ -49,7 +51,7 @@ export default function Pedidos() {
         <Card>
           <View style={{ flexDirection: "row" }}>
             <ImgConatiner>
-              <FotoFruta image={BananaPrata} />
+              <BananaPrataPedido />
             </ImgConatiner>
             <View style={{ flexDirection: "collumn" }}>
               <TituloCard>Banana Prata</TituloCard>
@@ -60,10 +62,21 @@ export default function Pedidos() {
         <Card>
           <View style={{ flexDirection: "row" }}>
             <ImgConatiner>
-              <FotoFruta style={{ borderRadius: 100 }} image={Pupunha} />
+              <PupunhaPedido />
             </ImgConatiner>
             <View style={{ flexDirection: "collumn" }}>
               <TituloCard>Pupunha</TituloCard>
+              <PrecoCard>R$5,00</PrecoCard>
+            </View>
+          </View>
+        </Card>
+        <Card>
+          <View style={{ flexDirection: "row" }}>
+            <ImgConatiner>
+              <PupunhaPedido />
+            </ImgConatiner>
+            <View style={{ flexDirection: "collumn" }}>
+              <TituloCard>Bacurí</TituloCard>
               <PrecoCard>R$5,00</PrecoCard>
             </View>
           </View>

@@ -7,6 +7,7 @@ export const Container = styled.View`
 
 export const Header = styled.View`
   height: 150px;
+  width: 100%;
   justify-content: center;
   align-items: center;
   align-self: center;
@@ -42,7 +43,6 @@ export const Card = styled.View`
 export const ImgConatiner = styled.View`
   height: 65px;
   width: 65px;
-  border-width: 1px;
   border-radius: 70px;
 `;
 
@@ -70,10 +70,30 @@ export const BotaoFinal = styled.TouchableOpacity`
   background-color: #62a87c;
 `;
 
+export const BananaVermelhaPedido = styled.Image.attrs({
+  source: require("../img/BananaVermelha.jpg"),
+})`
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 100px;
+`;
+
 export const BananaPrataPedido = styled.Image.attrs({
   source: require("../img/BananaPrata.jpg"),
-  resizeMode: "stretch",
-  position: "absolute",
+})`
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 65px;
+  width: 65px;
+  border-radius: 100px;
+`;
+
+export const PupunhaPedido = styled.Image.attrs({
+  source: require("../img/Pupunha.jpg"),
 })`
   justify-content: center;
   align-items: center;
