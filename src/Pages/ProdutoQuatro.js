@@ -13,7 +13,7 @@ import {
   TextPedidoQuatro,
   TextPedidoButtom,
   ContainerPedidoTitulo,
-  BananaPrataPedido,
+  PedidoBacuri,
   CounterContainer,
 } from "../Styles/Styles";
 
@@ -22,17 +22,17 @@ export default function ProdutoUm () {
     return (
       <ContainerFruta>
       <BolinhaDois>
-        <BananaPrataPedido />
+        <PedidoBacuri />
       </BolinhaDois>
       <ContainerPedidoTitulo>
-      <TextPedidoUm>Banana Prata{"\n"}(12 unidades)</TextPedidoUm> 
+      <TextPedidoUm>Bacuri (5 unidades)</TextPedidoUm> 
       <TextPedidoDois>R$ 5,00</TextPedidoDois>
       </ContainerPedidoTitulo>
       <TextPedidoTres>Descrição</TextPedidoTres>
       <TextPedidoQuatro>
-      - A banana contém muito ferro, que estimula a produção de hemoglobina. 
-        Portanto, incluir o seu consumo na dieta é uma forma eficiente de ajudar a combater a anemia.{"\n"}{"\n"}
-       - Colhidas no dia 30 de Maio. </TextPedidoQuatro>
+      - Bacuri é uma fruta nativa da floresta Amazônica.{"\n"} A polpa branca dessa fruta possui 
+       altos índices de cálcio, fósforo, ferro e vitamina C.{"\n"}{"\n"} 
+      - Colhidos no dia 2 de Junho.</TextPedidoQuatro>
       <CounterContainer>
       <CounterInput backgroundColor = '#62A87C' 
       increaseButtonBackgroundColor = 'fff' 
@@ -47,4 +47,3 @@ export default function ProdutoUm () {
      </ContainerFruta>
     );
   }
-

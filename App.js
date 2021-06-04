@@ -13,6 +13,7 @@ import SeuJorge from "./src/Pages/SeuJorge";
 import ProdutoUm from "./src/Pages/ProdutoUm";
 import ProdutoDois from "./src/Pages/ProdutoDois";
 import ProdutoTres from "./src/Pages/ProdutoTres";
+import ProdutoQuatro from "./src/Pages/ProdutoQuatro";
 import Checkout from "./src/Pages/Checkout";
 
 const Stack = createStackNavigator();
@@ -35,6 +36,7 @@ export default function App() {
         <Stack.Screen name="ProdutoUm" component={ProdutoUm} />
         <Stack.Screen name="ProdutoDois" component={ProdutoDois} />
         <Stack.Screen name="ProdutoTres" component={ProdutoTres} />
+        <Stack.Screen name="ProdutoQuatro" component={ProdutoQuatro} />
         <Stack.Screen name="Checkout" component={Checkout} />
       </Stack.Navigator>
     </NavigationContainer>

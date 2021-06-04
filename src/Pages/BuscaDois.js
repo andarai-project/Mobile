@@ -21,6 +21,7 @@ import {
   LiliImg,
   MaiconImg,
   CarmemImg,
+  TextPedidoButtom,
 } from "../Styles/Styles";
 
 export default function BuscaDois () {
@@ -77,6 +78,12 @@ export default function BuscaDois () {
               </IconTresContainer>
               </ContainerCartao>
               </HomeContainerHorizontal>
+                <TextPedidoButtom> </TextPedidoButtom>
+                <TextPedidoButtom> </TextPedidoButtom>
+                <TextPedidoButtom> </TextPedidoButtom>
+                <TextPedidoButtom> </TextPedidoButtom>
+                <TextPedidoButtom> </TextPedidoButtom>
+                <TextPedidoButtom> </TextPedidoButtom>
                 
             </ScrollView>
             </ContainerBusca>

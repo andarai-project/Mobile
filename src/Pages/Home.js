@@ -4,6 +4,8 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import MapView from "react-native-maps";
+import { useNavigation } from '@react-navigation/native';
+
 
 import {
   Container,
@@ -27,9 +29,15 @@ import {
 const {width, height} = Dimensions.get('screen')
 
 const images = [
-  'https://i.imgur.com/mOoBLZr.png',
-  'https://i.imgur.com/slgElmK.png'
+  'https://i.imgur.com/MESs2Tk.png',
+  'https://i.imgur.com/EVaM64r.png'
 ]
+
+export default function(props) {
+  const navigation = useNavigation();
+
+  return <Home {...props} navigation={navigation} />;
+}
 
 class Home extends React.Component {
   constructor(props) {
@@ -53,6 +61,7 @@ class Home extends React.Component {
 
   render() {
     const { active } = this.state;
+    const { navigation } = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.wrap}>
@@ -103,7 +112,7 @@ class Home extends React.Component {
               <MaterialCommunityIcons name="candycane" size={30} color="#EB4796" />
               </IconContainerDois>
               </ContainerCartao>
-              <ContainerCartao>
+              <ContainerCartao onPress={ () => navigation.navigate("SeuJorge")}>
               <RetanguloFrutas />
               <Bolinha><FeiranteTres /></Bolinha>
               <TextDois>Frutas Seu Jorge</TextDois>
@@ -188,5 +197,3 @@ const styles = StyleSheet.create({
   }
 
 });
-
-export default Home;

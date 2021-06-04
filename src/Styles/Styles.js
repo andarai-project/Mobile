@@ -44,7 +44,7 @@ export const TextTres = styled.Text`
 
 
 export const TextPedidoUm = styled.Text`
-  top: 40px;
+  top: 55px;
   font-size: 22px;
   font-weight: bold;
   color: black;
@@ -52,24 +52,23 @@ export const TextPedidoUm = styled.Text`
 
 
 export const TextPedidoDois = styled.Text`
-  top: 50px;
+  top: 60px;
   font-size: 15px;
   font-weight: bold;
   color: black;
 `;
 
 export const TextPedidoTres = styled.Text`
-  right: 80px;
-  top: 380px;
+  right: 130px;
+  top: 350px;
   font-size: 15px;
   font-weight: bold;
   color: black;
 `;
 
 export const TextPedidoQuatro = styled.Text`
-  left: -4px;
-  right: 80px;
-  top: 380px;
+  left: 20px;
+  top: 350px;
   font-size: 13px;
   color: black;
 `;
@@ -86,6 +85,7 @@ export const TextPedidoButtom = styled.Text`
 
 export const TextBusca = styled.Text`
   top: 70px;
+  position: absolute;
   font-size: 27px;
   font-weight: bold;
   color: black;
@@ -395,9 +395,10 @@ export const SearchContainer = styled.View`
 `;
 
 
-export const ContainerBuscaTitulo = styled.TouchableOpacity`
+export const ContainerBuscaTitulo = styled.View`
   justify-content: center;
   align-items: center;
+  background-color: #FFEDDC;
 `;
 
 
@@ -504,7 +505,7 @@ export const TextBuscaContainer = styled.Text`
 export const RetanguloBusca = styled.View`
   align-self: center;
   margin-top: 81px;
-  background-color: #B5F5CD;
+  background-color: #FFEDDC;
   flex-direction: row;
   height: 150px;
   width: 140px;
@@ -628,4 +629,35 @@ export const CupuaçuJorge = styled.Image.attrs({
   height: 100px;
   width: 100px;
   border-radius: 100px;
+`;
+
+export const BacuriJorge = styled.Image.attrs({
+  source: require("../img/Bacuri.jpg"),
+  resizeMode: "stretch",
+  position: "absolute",
+})`
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+`;
+
+export const PedidoBacuri = styled.Image.attrs({
+  source: require("../img/Bacuri.jpg"),
+  resizeMode: "stretch",
+  position: "absolute",
+})`
+ justify-content: center;
+ align-items: center;
+ align-self: center;
+ height: 200px;
+ width: 200px;
+ border-radius: 100px;
+`;
+export const CounterContainer = styled.View`
+  top: 430px;
+  justify-content: center;
+  align-items: center;
 `;

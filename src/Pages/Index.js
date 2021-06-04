@@ -14,7 +14,6 @@ import Buscar from "../Pages/Buscar";
 import Mapa from "../Pages/Mapa";
 import Pedidos from "../Pages/Pedidos";
 import Fidelize from "../Pages/Fidelize";
-import BuscaDois from "../Pages/BuscaDois";
 
 class Basic extends Component {
   constructor(props) {

@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import { StyleSheet, View, ScrollView, Text } from "react-native";
+import { useNavigation } from '@react-navigation/native';
+import CounterInput from "react-native-counter-input";
 
 import {
   ContainerFruta,
@@ -12,10 +14,11 @@ import {
   TextPedidoButtom,
   ContainerPedidoTitulo,
   BananaVermelhaPedido,
+  CounterContainer,
 } from "../Styles/Styles";
 
-class ProdutoUm extends React.Component {
-  render() {
+export default function ProdutoUm () {
+  const navigation = useNavigation();
     return (
       <ContainerFruta>
       <BolinhaDois>
@@ -25,9 +28,18 @@ class ProdutoUm extends React.Component {
       <TextPedidoUm>Banana Vermelha{"\n"}   (12 unidades)</TextPedidoUm> 
       <TextPedidoDois>R$ 5,00</TextPedidoDois>
       </ContainerPedidoTitulo>
-      <TextPedidoTres>Área de Entrega</TextPedidoTres>
-      <TextPedidoQuatro>Delivered between monday aug and thursday{"\n"}20 from 8pm to 91:32 pm </TextPedidoQuatro>
-       <ButtomPedidosUm>
+      <TextPedidoTres>Descrição</TextPedidoTres>
+      <TextPedidoQuatro>
+      - A banana vermelha é fonte de potássio, vitaminas C e do complexo B e betacaroteno, 
+      além de possuir 15%{"\n"} da quantidade de fibras recomendada por dia.{"\n"}{"\n"} 
+      - Colhidas no dia 2 de Junho.</TextPedidoQuatro>
+      <CounterContainer>
+      <CounterInput backgroundColor = '#62A87C' 
+      increaseButtonBackgroundColor = 'fff' 
+      decreaseButtonBackgroundColor = 'fff'
+      horizontal />
+      </CounterContainer>
+       <ButtomPedidosUm onPress={() => {navigation.goBack();}}>
          <TextPedidoButtom>Adicionar ao Carrinho</TextPedidoButtom>
          </ButtomPedidosUm> 
          <TextPedidoTres></TextPedidoTres>
@@ -35,6 +47,4 @@ class ProdutoUm extends React.Component {
      </ContainerFruta>
     );
   }
-}
 
-export default ProdutoUm;

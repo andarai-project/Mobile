@@ -3,7 +3,7 @@ import {View, StyleSheet, Text, ScrollView } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 import { Ionicons } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
-import { useNavigation } from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native';
 
 import {
   Container,
@@ -18,7 +18,7 @@ import {
 } from "../Styles/Styles";
 
 export default function Buscar () {
-  const navigation = useNavigation()
+  const navigation = useNavigation();
     return (
       <Container>
        <ScrollView>

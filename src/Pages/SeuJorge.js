@@ -24,6 +24,7 @@ import {
   BananaNanicaJorge,
   PupunhaJorge,
   CupuaçuJorge,
+  BacuriJorge,
 } from "../Styles/Styles";
 
 export default function SeuJorge () {
@@ -90,6 +91,16 @@ export default function SeuJorge () {
                 <CupuaçuJorge />
               </BolinhaTres>
               <TextBuscaContainer>Cupuaçu</TextBuscaContainer>
+              <IconTresContainer>
+              <TextTres>R$ 5,00</TextTres>
+              </IconTresContainer>
+              </ContainerCartao>
+              <ContainerCartao onPress={ () => navigation.navigate("ProdutoQuatro")}>
+              <RetanguloBusca />
+              <BolinhaTres>
+                <BacuriJorge />
+              </BolinhaTres>
+              <TextBuscaContainer>Bacuri</TextBuscaContainer>
               <IconTresContainer>
               <TextTres>R$ 5,00</TextTres>
               </IconTresContainer>
