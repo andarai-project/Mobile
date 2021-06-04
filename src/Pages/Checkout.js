@@ -21,7 +21,7 @@ import {
 
 import { TextoCheck } from "../Styles/Cadastro";
 
-import { Card, Inputs, CardS } from "../Styles/Checkout";
+import { Card, Inputs, CardS, TotalView } from "../Styles/Checkout";
 
 export default function Checkout() {
   const Alerta = () =>
@@ -57,14 +57,14 @@ export default function Checkout() {
         </View>
 
         <Card>
-          <Inputs placeholder="Nome"></Inputs>
-          <Inputs placeholder="Endereço"></Inputs>
+          <Inputs placeholder="Nome">Rita Menezes</Inputs>
+          <Inputs placeholder="Endereço">Rua Meirelles, 67</Inputs>
           <Inputs
             style={{
               borderBottomWidth: 0,
             }}
           >
-            (91)999999999
+            (91) 98521-6985
           </Inputs>
         </Card>
         <View
@@ -165,6 +165,10 @@ export default function Checkout() {
           </TextoCheck>
         </CardS>
       </Main>
+      <TotalView>
+        <Text style={{ fontWeight: "bold", fontSize: 20 }}>Total</Text>
+        <Text style={{ fontSize: 20, paddingLeft: 230 }}>R$18</Text>
+      </TotalView>
       <Footer>
         <BotaoFinal onPress={Alerta}>
           <Text style={{ fontWeight: "bold" }}>Finalizar Pedido</Text>
